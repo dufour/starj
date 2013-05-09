@@ -1,0 +1,50 @@
+<project name="*J" default="dist" basedir=".">
+
+    <property name="version" value="0.1"/>
+
+    <property name="src" value="src"/>
+    <property name="classes" value="classes"/>
+    <property name="docs" value="docs"/>
+    <property name="lib" value="lib"/>
+
+    <target name="compile"> 
+        <!-- Compile the java code -->
+        <mkdir dir="${classes}"/>
+        <javac srcdir="${src}" destdir="${classes}" optimize="on"/>
+    </target>
+
+    <target name="javadoc">
+        <!-- Produce javadoc -->
+        <mkdir dir="${docs}"/>
+        <javadoc packagenames="starj.*"
+               sourcepath="${src}"
+               destdir="${docs}"
+               Windowtitle="*J Documentation - Version ${version}"/>
+    </target>
+
+    <target name="jar" depends="compile">
+        <!-- Produce jar file -->
+        <mkdir dir="${lib}"/>
+        <jar destfile="${lib}/starj.jar">
+            <fileset dir="${classes}"/>
+            <manifest>
+              <attribute name="Main-Class" value="starj.Main"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="dist" depends="jar,clean_classes"/>
+
+    <target name="clean_classes">
+        <delete dir="${classes}"/>
+    </target>
+
+    <target name="clean" depends="clean_classes">
+        <!-- Remove all created directories -->
+        <delete dir="${docs}"/>
+        <delete dir="${lib}"/>
+    </target>
+
+    <target name="rebuild" depends="clean,compile">
+    </target>
+</project> 

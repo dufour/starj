@@ -1,0 +1,16 @@
+*J is a toolkit which serves two primary purposes:
+    1) To facilitate the collection of dynamic execution data for Java programs
+    2) To provide a framework for implementing analyses of this collected
+      data quickly and easily
+
+These two main goals are accomplished through the use of two separate tools:
+    1) The *J profiling agent collects event trace data from a Java program
+        running in a Java Virtual Machine (JVM) which implements the
+        Java Virtual Machine Profiler Interface (JVMPI)
+    2) The *J trace analyzer framework reads and analyzes the traces
+        produced by the agent, using either a built-in analyses or custom ones.
+
+To install *J on your system, please refer to the file named 'INSTALL'.
+
+Visit the *J homepage: http://www.sable.mcgill.ca/starj/
+Send comments/bug reports to: Bruno Dufour (bdufou1@sable.mcgill.ca)

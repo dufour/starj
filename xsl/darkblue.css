@@ -1,0 +1,86 @@
+BODY, TD, TH, P, LI {
+  FONT-FAMILY: Arial,Helvetica,Geneva,Sans-Serif;
+}
+
+PRE, CODE {
+  FONT-FAMILY: Courier,Monospace;
+}
+
+BODY {
+  BACKGROUND: #A2A095;
+  COLOR: #00002F;
+  MARGIN-LEFT: 3mm;
+  MARGIN-RIGHT: 3mm;
+}
+
+.title {
+  FONT-STYLE: italic;
+}
+
+.toc_title {
+  BACKGROUND-COLOR: #00002F;
+  COLOR: #FFFFFF;
+}
+
+.toc_contents {
+  BACKGROUND-COLOR: #DDDFD7;
+  COLOR: #00002F;
+}
+
+.contents_title {
+  BACKGROUND-COLOR: #00002F;
+  COLOR: #FFFFFF;
+}
+
+.contents {
+  BACKGROUND-COLOR: #DDDFD7;
+  COLOR: #00002F;
+}
+
+.bin_title {
+  BACKGROUND-COLOR: #00002F;
+  COLOR: #FFFFFF;
+}
+
+.bin {
+  BACKGROUND-COLOR: #DDDFD7;
+  COLOR: #00002F;
+}
+
+.bin_row2 {
+  BACKGROUND-COLOR: #F6F4ED;
+}
+
+.metric_space {
+  BACKGROUND-COLOR: #A2A095;
+  COLOR: #00002F;
+  FONT-WEIGHT: bold;
+  TEXT-ALIGN: center;
+}
+
+.metric_name {
+  font-weight: bold;
+}
+
+.metric_value {
+}
+
+A:link {
+  COLOR: #AD2C2C;
+}
+
+A:hover {
+  COLOR: #DC3838;
+}
+
+A:visited {
+  COLOR: #00005F;
+}
+
+hr {
+  WIDTH: 75%;
+}
+
+.footnote {
+  FONT-SIZE: 50%;
+}
